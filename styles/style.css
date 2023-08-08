@@ -24,7 +24,6 @@ input[type="text"] {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  inline-size: 1200px;
   block-size: 100%;
 }
 
@@ -97,11 +96,12 @@ ol {
   width: 711px;
   max-height: 386px;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .result__video {
   width: 100%;
-  max-height: 386px;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
@@ -118,7 +118,8 @@ ol {
 .content__video-card-thumbnail {
   width: 194px;
   min-height: 103px;
-  object-fit: contain;
+  margin-top: 5px;
+  object-fit: fill;
   object-position: center;
 }
 
@@ -148,6 +149,7 @@ ol {
 
 .content__video-card-title {
   margin-bottom: 6px;
+  margin-top: 5px;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: 30px;
@@ -186,13 +188,13 @@ ol {
 .button {
   width: 100%;
   min-height: 34px;
-  border: 1px solid #fff;
+  border: 1px solid currentColor;
   color: #FFF;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-weight: 700;
   font-size: 18px;
   text-align: center;
-  background: #0000;
+  background: transparent;
   cursor: pointer;
 }
 
@@ -223,7 +225,7 @@ ol {
   outline: 1px solid #fff;
 }
 
-.search-form__textfield:focus {
+.search-form__textfield{
   outline: 1px solid #fff;
 }
 
