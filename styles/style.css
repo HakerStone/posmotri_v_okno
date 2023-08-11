@@ -64,6 +64,7 @@ ol {
   display: flex;
   align-items: end;
   gap: 30px;
+  inline-size:1140px;
 }
 
 .result {
@@ -97,7 +98,7 @@ ol {
 .result__video-container {
   position: relative;
   width: 711px;
-  max-height: 386px;
+  block-size: 386px;
   margin-bottom: 16px;
   display: inline-block;
 }
@@ -229,7 +230,7 @@ ol {
 }
 
 .search-form__textfield:focus{
-  outline: 1px solid #fff none;
+  outline:none;
 }
 
 .search-form__pseudo-checkbox {
@@ -279,7 +280,7 @@ ol {
   background: #545050;
 }
 
-.content__list-item {
+.content__list-item:not(:last-of-type) {
   margin-bottom: 30px;
   display: block;
   padding-left: 1px
